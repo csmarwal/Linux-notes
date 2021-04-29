@@ -1,3 +1,9 @@
-Going to root 
+1. Going to root 
 
 sudo su -  // This command will take you to root prompt
+
+==============================================================
+2. Allocating root access to normal user
+
+if we want to give root access to a general user we have to adit the file name called sudoers (/etc/sudoers) 
+
