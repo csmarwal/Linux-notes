@@ -1,0 +1,36 @@
+Small and necessary armer :)
+
+pwd     // present working Directory
+whoami  // showing the logged username
+ls      // List all files
+cd      // Change Directory
+clear   // Clear the screen
+cat     // to read a file
+grep    // to find strings in the file
+more    // to see longer files
+touch   // create a file
+mkdir   // creating new Directory
+cp      // copy the file
+Mv      // Move the files
+head     // to see starting lines of the file ( head -20 )   
+tail     // to see ending lines of the file ( tail -20) 
+
+
+-----------------------------------------
+Pro armer
+
+
+uname -a             // Display Linux system information
+uname -r             //Display kernel release information 
+uptime               //  Show how long the system has been running + load
+hostname             // Show system host name
+hostname -I          // Display all local IP addresses of the host.
+last reboot          // Show reboot history
+w                    //Display who is online   
+poweroff               // shutdown 
+shutdown -h now      // it will shutdown a to enter without "now" it will take time may be 1 m 
+---------------------------------------------------
+Not much useful 
+
+date 
+cal
