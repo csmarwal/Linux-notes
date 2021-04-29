@@ -13,3 +13,9 @@ File is in this repo check it out line 105
 
 ===================================================================
 
+Changing the user or using different user
+
+su - username
+
+example : https://monosnapsanjay.s3-ap-southeast-2.amazonaws.com/6hw8f__043007.38.12.png
+

@@ -27,10 +27,25 @@ hostname             // Show system host name
 hostname -I          // Display all local IP addresses of the host.
 last reboot          // Show reboot history
 w                    //Display who is online   
-poweroff               // shutdown 
+poweroff             // shutdown 
 shutdown -h now      // it will shutdown a to enter without "now" it will take time may be 1 m 
+init 0               // shutdown   
+init 6               //reboot
+reboot               //reboot //restart
 ---------------------------------------------------
 Not much useful 
 
 date 
 cal
+
+---------------------------------------------------
+Admin commands
+
+sudo su -         // going to root user
+useradd sanjay    // to create new user
+passwd username   // create password 
+
+
+Environment Variable
+-------------------------------
+
