@@ -1,0 +1,42 @@
+
+Configuring a Static IP
+
+You can set up a static IP via command line by modifying the network script of the interface.
+
+1. First, find the name of the network interface you want to change using the network manager command-line tool. Prompt the system to list all network devices, along with network details:
+
+      nmcli d
+
+In our example, we will change the configuration for the first network.
+
+Display network devices on CentOS.
+2. To do so, open the network’s configuration file by typing the following:
+
+vi /etc/sysconf ig/network-scripts/ifcfg-[network_device_name]
+3. A text editor with the network configuration opens.
+
+4. To set a static IP for your network, you need to change the BOOTPROTO line to have the value "static". Also, modify the ONBOOT option to "yes" to enable the network when starting the system.
+
+5. Then, add the following information about your network under the already existing text:
+
+        IPADDR=...
+
+        NETMASK=...
+
+        GATEWAY=...
+
+        DNS1=...
+
+        DNS2=...
+
+The configuration file should be similar to the example below:
+
+Configure a static IP address using the command line.
+
+https://u.pcloud.link/publink/show?code=XZgbRTXZSvtnXdQjy7bFGjwOK95WY5JOjf2k
+
+6. Save the file and exit the text editor, returning to the command line.
+
+7. For these changes to take effect, you must restart the network with the command:
+
+systemctl restart
