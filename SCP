@@ -1,0 +1,3 @@
+scp -rp -i vpc01.pem "aws_Linux.pem" ec2-user@107.21.169.247:
+
+"aws_linux.pem" is file which I want to transfer to remote server 107.21.169.247
