@@ -1,0 +1,23 @@
+Select a target
+
+Target                                       Purpose
+graphical.target             multiple user, GUI and text based login
+Multi-user.target            multiple user and text based login no GUI
+rescue.target                sulogin prompt, basis system initialization completed
+emergency.target             sulogin prompt, initramfs pivot complete and system root mount on / read only
+
+   Runlevel            Target Units     Description
+0 runlevel0.target, poweroff.target Shut down and power off the system.
+1 runlevel1.target, rescue.target     Set up a rescue shell.
+2 runlevel2.target, multi-user.target Set up a non-graphical multi-user system.
+3 runlevel3.target, multi-user.target Set up a non-graphical multi-user system.
+4 runlevel4.target, multi-user.target Set up a non-graphical multi-user system.
+5 runlevel5.target, graphical.target Set up a graphical multi-user system.
+6 runlevel6.target, reboot.target     Shut down and reboot the system.
+
+Old Command        New Command                          Description
+runlevel        systemctl list-units --type target Lists currently loaded target units.
+telinit runlevel   systemctl isolate name.target     Changes the current target.
+ 
+Commands
+systemctl list-dependencies graphical.target | grep target
